@@ -110,6 +110,41 @@
   padding: 25px;
   border-radius: 20px;
        }
+       .logo-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-circle img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+     }
+       .logo-box {
+  justify-content: center;
+     }
             
   </style>
 </head>
@@ -127,7 +162,16 @@
 <main>
 <!-- HOME SECTION -->
 <section id="home">
-  <h1>Dhillon Financial Services</h1>
+<div class="logo-box">
+  <div class="logo-circle">
+    <img src="logo.png" alt="Dhillon Financial Services Logo">
+  </div>
+
+  <div class="logo-text">
+    <h1>Dhillon Financial Services</h1>
+    <p>Trusted Loan Assistance in Ludhiana</p>
+  </div>
+</div>
 
   <p>
     Dhillon Financial Services is a loan assistance service based in Ludhiana.
