@@ -1,11 +1,11 @@
-     <!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="google-site-verification" content="abdb9f61bfd654c6" />
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-     
+  <meta name="google-site-verification" content="abdb9f61bfd654c6" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <!-- SEO TITLE -->
   <title>Dhillon Financial Services | Easy Loan Assistance in Ludhiana</title>
 
@@ -14,7 +14,9 @@
   <meta name="keywords" content="loan in Ludhiana, home loan Ludhiana, personal loan, business loan, loan against property, Dhillon Finance">
   <meta name="author" content="Dhillon Finance Services">
   <meta name="robots" content="index, follow">
-     <script type="application/ld+json">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FinancialService",
@@ -28,49 +30,155 @@
   "areaServed": "Ludhiana",
   "serviceType": "Loan Assistance"
 }
-     </script>
-     <link rel="canonical" href="https://www.dhillonfinanceservices.com">
+  </script>
 
-  <!-- OPEN GRAPH (for sharing) -->
+  <!-- Canonical & Open Graph -->
+  <link rel="canonical" href="https://www.dhillonfinanceservices.com">
   <meta property="og:title" content="Dhillon Finance Services | Loan Assistance in Ludhiana">
   <meta property="og:description" content="Apply for home loan, business loan, and personal loan in Ludhiana with Dhillon Finance Services.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://dhillonfinanceservices.github.io/">
+  <meta property="og:url" content="https://www.dhillonfinanceservices.com">
 
+  <!-- CSS -->
   <style>
+    /* GENERAL STYLES */
     html {
       scroll-behavior: smooth;
     }
 
     body {
       margin: 0;
-      animation: fadeIn .8s ease;
       font-family: Arial, sans-serif;
+      animation: fadeIn 0.8s ease;
+      background-color: #f9f9f9;
     }
 
+    h1, h2, h3, h4 {
+      margin: 0;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    /* NAVIGATION */
     nav {
       background-color: black;
       padding: 20px;
+      text-align: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-right: 10px;
+      margin: 0 10px;
+      font-weight: bold;
     }
 
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      margin: 0;
+      border: none;
+      border-top: 2px solid #4169E1;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 40px 20px;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+
+    /* LOGO */
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .logo-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-circle img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .logo-text h1 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .logo-text h2 {
+      font-size: 1rem;
+      text-align: center;
+      opacity: 0.9;
+      margin-top: 5px;
+    }
+
+    /* HOME SECTION */
     #home {
       background-color: #4169E1;
-      font-size: 1.2rem;
-      padding: 40px 20px;
       color: white;
+      border-radius: 15px;
     }
 
-    #services, #contact, #information {
+    #home button {
+      border-radius: 20px;
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    #home button:hover {
+      background-color: darkgreen;
+    }
+
+    /* SERVICES */
+    #services, #contact, #information, #call, #why, #chat, #faq, #privacy {
+      background-color: white;
       box-shadow: 4px 2px 20px grey;
-      padding: 40px;
-      margin: 20px;
+      border-radius: 15px;
+    }
+
+    .service-buttons button {
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 15px;
+      border: none;
+      background-color: #4169E1;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .service-buttons button:hover {
+      background-color: #27408B;
+    }
+
+    .service-details {
+      margin-top: 20px;
+      padding: 15px;
+      border: 2px solid #4169E1;
       border-radius: 10px;
+      background-color: #f0f8ff;
     }
 
     input, select {
@@ -79,355 +187,280 @@
       width: 100%;
       max-width: 300px;
       padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
     }
 
     button {
       border-radius: 20px;
-      background-color: green;
+      background-color: #4169E1;
       color: white;
       padding: 10px 20px;
       border: none;
       cursor: pointer;
     }
 
-    #location {
-      box-shadow: 4px 2px 20px grey;
-      border-radius: 20px;
-      padding: 20px;
-      margin-bottom: 20px;
+    button:hover {
+      background-color: #27408B;
     }
 
-    #box {
-      border: 2px solid black;
-      padding: 10px;
+    #location iframe {
       width: 100%;
-      max-width: 250px;
-      border-radius: 10px;
+      height: 250px;
+      border: 0;
+      border-radius: 15px;
     }
-#hi {
-       border: 2px solid black;
-      padding: 30px;
-      width: 150px;
-      max-width: 100%;
-      border-radius: 10px
-}    
-    
+
+    #box, #hi {
+      border: 2px solid black;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* ANIMATION */
     @keyframes fadeIn {
       from {opacity: 0;}
       to {opacity: 1;}
     }
-       #call {
-  box-shadow: 4px 2px 20px grey;
-  padding: 20px;
-  border-radius: 20px;
-       }
-       #why {
-            box-shadow: 4px 2px 20px grey;
-  padding: 25px;
-  border-radius: 20px;
-       }
-       .logo-box {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
 
-.logo-circle {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .logo-box {
+        flex-direction: column;
+      }
 
-.logo-circle img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-}
-
-.logo-text h1 {
-  margin: 0;
-  font-size: 1.6rem;
-}
-
-.logo-text p {
-  margin: 0;
-  font-size: 0.9rem;
-  opacity: 0.9;
-     }
-       .logo-box {
-  justify-content: center;
-     }
-
-       #chat {
-            box-shadow: 4px 2px 20px grey;
-      padding: 40px;
-      margin: 20px;
-      border-radius: 10px;
-       } 
-            
+      input, select, #box, #hi {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="#home">Home</a> |
-  <a href="#services">Services</a> |
-  <a href="#contact">Contact</a> |
-  <a href="#information">Information</a>
-</nav>
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#home">Home</a> |
+    <a href="#services">Services</a> |
+    <a href="#contact">Contact</a> |
+    <a href="#information">Information</a>
+  </nav>
 
-<hr>
-<main>
-<!-- HOME SECTION -->
-<section id="home">
-<div class="logo-box">
-  <div class="logo-circle">
-    <img src="favicon.ico" alt="Dhillon Financial Services Logo">
-  </div>
+  <hr>
 
-  <div class="logo-text">
-    <h1>Dhillon Financial Services</h1>
-    <h2 style="text-align:center;">
-Loan Assistance Services in Ludhiana
-    </h2>
-  </div>
-</div>
+  <main>
 
-  <p>
-    Dhillon Financial Services is a loan assistance service based in Ludhiana.
-    We help individuals and businesses apply for home loans, personal loans,
-    business loans, and loan against property through trusted banks.
-  </p>
-     <p>
-We primarily serve customers in Ludhiana and nearby areas by offering
-personalized loan guidance and simple application support.
-If you are planning to apply for a loan,
-<a href="#contact" style="color:white; text-decoration:underline;">
-contact Dhillon Financial Services
-</a>
-for quick assistance.
-     </p>
+    <!-- HOME SECTION -->
+    <section id="home">
+      <div class="logo-box">
+        <div class="logo-circle">
+          <img src="favicon.ico" alt="Dhillon Financial Services Logo">
+        </div>
+        <div class="logo-text">
+          <h1>Dhillon Financial Services</h1>
+          <h2>Loan Assistance Services in Ludhiana</h2>
+        </div>
+      </div>
 
-  <p>
-    Our goal is to make the loan process easy, transparent, and understandable.
-    This website helps users submit loan requests and get proper guidance.
-  </p>
+      <p>
+        Dhillon Financial Services is a loan assistance service based in Ludhiana.
+        We help individuals and businesses apply for home loans, personal loans,
+        business loans, and loan against property through trusted banks.
+      </p>
 
-  <button onclick="showalert()">ALERT ⚠️</button>
-</section>
+      <p>
+        We primarily serve customers in Ludhiana and nearby areas by offering
+        personalized loan guidance and simple application support.
+        If you are planning to apply for a loan,
+        <a href="#contact" style="color:white; text-decoration:underline;">
+          contact Dhillon Financial Services
+        </a> for quick assistance.
+      </p>
 
-<script>
-  function showalert() {
-    alert("🚨 Please read it: Loan services available in Ludhiana only.");
-  }
-</script>
+      <p>
+        Our goal is to make the loan process easy, transparent, and understandable.
+        This website helps users submit loan requests and get proper guidance.
+      </p>
 
-<!-- SERVICES -->
-<section id="services">
-  <h2>Our Services</h2>
-  <p>Click a button to see details about each service we provide:</p>
+      <button onclick="showalert()">ALERT ⚠️</button>
+    </section>
 
-  <!-- Buttons for your actual services -->
-  <div class="service-buttons">
-    <button onclick="showService('homeLoan')">Home Loan</button>
-    <button onclick="showService('personalLoan')">Personal Loan</button>
-    <button onclick="showService('businessLoan')">Business Loan</button>
-    <button onclick="showService('loanAgainstProperty')">Loan Against Property</button>
-    <button onclick="showService('giftProperty')">Gift Property Assistance</button>
-  </div>
+    <script>
+      function showalert() {
+        alert("🚨 Please read it: Loan services available in Ludhiana only.");
+      }
+    </script>
 
-  <!-- Service details (hidden by default) -->
-  <div id="service-details" class="service-details">
-    <p id="homeLoan" class="service-item" style="display:none;">
-      <strong>Home Loan:</strong> We guide you through home loan applications with simple documentation and the best bank options in Ludhiana.
-    </p>
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>Click a button to see details about each service we provide:</p>
 
-    <p id="personalLoan" class="service-item" style="display:none;">
-      <strong>Personal Loan:</strong> Get assistance for personal loans with transparent processes and guidance for quick approval.
-    </p>
+      <div class="service-buttons">
+        <button onclick="showService('homeLoan')">Home Loan</button>
+        <button onclick="showService('personalLoan')">Personal Loan</button>
+        <button onclick="showService('businessLoan')">Business Loan</button>
+        <button onclick="showService('loanAgainstProperty')">Loan Against Property</button>
+        <button onclick="showService('giftProperty')">Gift Property Assistance</button>
+      </div>
 
-    <p id="businessLoan" class="service-item" style="display:none;">
-      <strong>Business Loan:</strong> We support businesses in Ludhiana with loan applications, eligibility checks, and smooth processing.
-    </p>
+      <div id="service-details" class="service-details">
+        <p id="homeLoan" class="service-item" style="display:none;">
+          <strong>Home Loan:</strong> We guide you through home loan applications with simple documentation and the best bank options in Ludhiana.
+        </p>
+        <p id="personalLoan" class="service-item" style="display:none;">
+          <strong>Personal Loan:</strong> Get assistance for personal loans with transparent processes and guidance for quick approval.
+        </p>
+        <p id="businessLoan" class="service-item" style="display:none;">
+          <strong>Business Loan:</strong> We support businesses in Ludhiana with loan applications, eligibility checks, and smooth processing.
+        </p>
+        <p id="loanAgainstProperty" class="service-item" style="display:none;">
+          <strong>Loan Against Property:</strong> Guidance for securing loans using your property as collateral with trusted banks.
+        </p>
+        <p id="giftProperty" class="service-item" style="display:none;">
+          <strong>Gift Property Assistance:</strong> Help with legal processes and guidance for gifting property or transferring property ownership safely.
+        </p>
+      </div>
+    </section>
 
-    <p id="loanAgainstProperty" class="service-item" style="display:none;">
-      <strong>Loan Against Property:</strong> Guidance for securing loans using your property as collateral with trusted banks.
-    </p>
+    <script>
+      function showService(serviceId) {
+        const items = document.querySelectorAll('.service-item');
+        items.forEach(item => item.style.display = 'none');
 
-    <p id="giftProperty" class="service-item" style="display:none;">
-      <strong>Gift Property Assistance:</strong> Help with legal processes and guidance for gifting property or transferring property ownership safely.
-    </p>
-  </div>
-</section>
+        const selected = document.getElementById(serviceId);
+        if(selected) selected.style.display = 'block';
+      }
+    </script>
 
-<!-- CSS -->
-<style>
-  .service-buttons button {
-    margin: 5px;
-    padding: 10px 15px;
-    border-radius: 15px;
-    border: none;
-    background-color: #4169E1;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Dhillon Financial Services</h2>
+      <p>If you are planning to apply for a loan in Ludhiana, feel free to contact
+        us using the form below. Our team will review your details and provide
+        proper guidance based on your loan requirements and eligibility.</p>
 
-  .service-buttons button:hover {
-    background-color: #27408B;
-  }
+      <form action="https://formsubmit.co/abhisim66@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
+        <h3>Loan Type</h3>
+        <select name="loan_type" required>
+          <option value="">Select Loan Type</option>
+          <option>HOME LOAN</option>
+          <option>LOAN AGAINST PROPERTY</option>
+          <option>BUSINESS LOAN</option>
+          <option>PERSONAL LOAN</option>
+        </select>
+        <button type="submit">SEND 📤</button>
+      </form>
+    </section>
 
-  .service-details {
-    margin-top: 20px;
-    padding: 15px;
-    border: 2px solid #4169E1;
-    border-radius: 10px;
-    background-color: #f0f8ff;
-  }
+    <!-- INFORMATION -->
+    <section id="information">
+      <h2>Our Information</h2>
 
-  .service-item {
-    font-size: 1rem;
-    margin: 10px 0;
-  }
-</style>
+      <div id="location">
+        <h3>Office Location</h3>
+        <p>
+          SCO 15, Cabin No. 206, 5th Floor,<br>
+          Feroze Gandhi Market, Ludhiana.
+        </p>
+        <iframe src="https://www.google.com/maps?q=Feroze%20Gandhi%20Market%20Ludhiana&output=embed" loading="lazy"></iframe>
+      </div>
 
-<!-- JS -->
-<script>
-function showService(serviceId) {
-  const items = document.querySelectorAll('.service-item');
-  items.forEach(item => item.style.display = 'none');
+      <div id="box">
+        <h4>Direct Contact</h4>
+        <p>
+          Phone: +91 79860-14325<br>
+          Email: sukhjindersingh19780@gmail.com
+        </p>
+      </div>
 
-  const selected = document.getElementById(serviceId);
-  if(selected) selected.style.display = 'block';
-}
-</script>
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact Dhillon Financial Services</h2>
-     <br><br>
-     <p>
-If you are planning to apply for a loan in Ludhiana, feel free to contact
-us using the form below. Our team will review your details and provide
-proper guidance based on your loan requirements and eligibility.
-     </p>
-<br><br>
-  <form action="https://formsubmit.co/abhisim66@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Enter your name" required>
-    <br><br>
+      <div id="hi">
+        <h4>Our bank services:</h4>
+        <ul>
+          <li>HDFC BANK</li>
+          <li>AXIS BANK</li>
+          <li>ICICI BANK</li>
+          <li>BANK OF INDIA</li>
+          <li>PNB BANK</li>
+          <li>YES BANK</li>
+          <li>NBFC BANKS</li>
+        </ul>
+      </div>
+    </section>
 
-    <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
-    <br><br>
+    <!-- CALL & WHY CHOOSE US -->
+    <section id="call">
+      <h2>Call us directly:</h2>
+      <a href="tel:+917986014325">
+        <button aria-label="Call Dhillon Financial Services">Call us 📞</button>
+      </a>
+    </section>
 
-    <h3>Loan Type</h3>
-    <select name="loan_type" required>
-      <option value="">Select Loan Type</option>
-      <option>HOME LOAN</option>
-      <option>LOAN AGAINST PROPERTY</option>
-      <option>BUSINESS LOAN</option>
-      <option>PERSONAL LOAN</option>
-    </select>
+    <section id="why">
+      <h3>Why choose us:</h3>
+      <p>
+        We are committed to providing simple, fast, and transparent loan assistance.
+        Our team focuses on easy documentation, smooth processing, and reliable
+        guidance to help customers in Ludhiana choose the right loan solution.
+      </p>
+    </section>
 
-    <br><br>
-    <button type="submit">SEND 📤</button>
-  </form>
-</section>
+    <!-- WHATSAPP CHAT -->
+    <section id="chat">
+      <h4>Chat us on WhatsApp:</h4>
+      <button onclick="window.location.href='https://wa.me/917986014325?text=Hello%20there!'">Chat on WhatsApp</button>
+    </section>
 
-<!-- INFORMATION -->
-<section id="information">
-  <h2>Our Information</h2>
+    <!-- PRIVACY POLICY -->
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p>
+        We respect your privacy. Information submitted through forms is used only
+        to contact you regarding loan assistance and is not shared with third parties.
+      </p>
+    </section>
 
-  <div id="location">
-    <h2>Office Location</h2>
-    <p>
-      SCO 15, Cabin No. 206, 5th Floor,<br>
-      Feroze Gandhi Market, Ludhiana.
-    </p>
-       <iframe 
-  src="https://www.google.com/maps?q=Feroze%20Gandhi%20Market%20Ludhiana&output=embed"
-  width="100%" 
-  height="250" 
-  style="border:0;border-radius:15px;"
-  loading="lazy">
-       </iframe>
-  </div>
+    <!-- FAQ -->
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <h4>Do you provide loans outside Ludhiana?</h4>
+      <p>No, we currently provide loan assistance only in Ludhiana and nearby areas.</p>
 
-  <div id="box">
-    <h4>Direct Contact</h4>
-    <p>
-      Phone: +91 79860-14325<br>
-      Email: sukhjindersingh19780@gmail.com
-    </p>
-  </div>
-    <br><br>
-    <div id="hi">
-         <h4>Our bank services:</h4>
-<ul>
-  <li>HDFC BANK</li>
-  <li>AXIS BANK</li>
-  <li>ICICI BANK</li>
-  <li>BANK OF INDIA</li>
-  <li>PNB BANK</li>
-  <li>YES BANK</li>
-  <li>NBFC BANKS</li>
-</ul>
-    </div>
-</section>
-     <div id="call">
-          <h2>Call us directly:</h2>
-          <a href="tel:+917986014325">
-  <button aria-label="Call Dhillon Financial Services">Call us 📞</button>
-          </a>
-          <br><br>
-     </div>
-          <section id="why">
-               <h3>Why choose us:</h3>
-               <p>
-We are committed to providing simple, fast, and transparent loan assistance.
-Our team focuses on easy documentation, smooth processing, and reliable
-guidance to help customers in Ludhiana choose the right loan solution.
-               </p>
-               <br><br>
-          </section>
-     <section id ="chat">
-          <h4>Chat us on WhatsApp:</h4>
-          <button onclick="window.location.href='https://wa.me/917986014325?text=Hello%20there!'">
-  Chat on WhatsApp
-          </button>
-     </section>
-          <section id="privacy" style="padding:30px;">
-  <h2>Privacy Policy</h2>
-  <p>
-We respect your privacy. Information submitted through forms is used only
-to contact you regarding loan assistance and is not shared with third parties.
-  </p>
-          </section>
-</main>
-     <br><br>
-     <section id="faq" style="box-shadow:4px 2px 20px grey;padding:30px;margin:20px;border-radius:10px;">
-  <h2>Frequently Asked Questions</h2>
+      <h4>Which loans do you help with?</h4>
+      <p>Home loan, personal loan, business loan, and loan against property.</p>
 
-  <h4>Do you provide loans outside Ludhiana?</h4>
-  <p>No, we currently provide loan assistance only in Ludhiana and nearby areas.</p>
+      <h4>Do you charge any fees?</h4>
+      <p>Loan approval depends on bank policies. We guide you transparently.</p>
+    </section>
 
-  <h4>Which loans do you help with?</h4>
-  <p>Home loan, personal loan, business loan, and loan against property.</p>
+  </main>
 
-  <h4>Do you charge any fees?</h4>
-  <p>Loan approval depends on bank policies. We guide you transparently.</p>
-     </section>
-     <br><br>
-          <footer style="background:#000;color:#fff;padding:20px;text-align:center;">
-  <p>© 2025 Dhillon Financial Services, Ludhiana</p>
-  <p>Home Loan | Personal Loan | Business Loan</p>
-               <p>
-<a href="#privacy" style="color:white;">Privacy Policy</a>
-               </p>
-          </footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Dhillon Financial Services, Ludhiana</p>
+    <p>Home Loan | Personal Loan | Business Loan</p>
+    <p><a href="#privacy">Privacy Policy</a></p>
+  </footer>
 
 </body>
-                    </html>
+     </html>  
