@@ -263,12 +263,10 @@
     bottom:0;
     color:green;
     border-radius:20px;
+    left:50px;
 }
 .return:hover {
     text-decoration:none;
     color:red;
 }
-.return:selector {
-    color:yellow;
-    background-color:black;
-}
+
