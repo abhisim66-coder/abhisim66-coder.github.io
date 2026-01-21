@@ -172,7 +172,7 @@
     #call {
       position: fixed;
       bottom: 0;
-      left:15px;
+      left:0px;
       width: 100%;
       color:#fff;
       text-align: center;
@@ -245,7 +245,7 @@
       display: block;
       width: 50;
       background-color: blueviolet;
-      border-radius: 50%;
+      border-radius: 40%;
       border-style: dashed;
       border-color: chartreuse;
       text-align: center;
