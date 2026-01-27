@@ -14,21 +14,29 @@
         us using the form below. Our team will review your details and provide
         proper guidance based on your loan requirements and eligibility.</p>
 
-      <form action="https://api.web3forms.com/sumbit" method="POST">
-        <input type="hidden" name="access_key" value="bf7da8fd-f65d-4375-8185-7b8b97f1a382">
-        <input type="text" name="name" placeholder="Enter your name" required>
-         <br><br>
-        <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
-        <h3>Loan Type</h3>
-         <br><br>
-        <select name="loan_type" required>
-          <option value="">Select Loan Type</option>
-          <option>HOME LOAN</option>
-          <option>LOAN AGAINST PROPERTY</option>
-          <option>BUSINESS LOAN</option>
-          <option>PERSONAL LOAN</option>
-        </select>
-        <button type="submit">SEND 📤</button>
+      <form action="https://api.web3forms.com/submit" method="POST">
+
+  <input type="hidden" name="access_key" value="bf7da8fd-f65d-4375-8185-7b8b97f1a382">
+
+  <input type="text" name="name" placeholder="Enter your name" required>
+  <br><br>
+
+  <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
+  <br><br>
+
+  <h3>Loan Type</h3>
+
+  <select name="loan_type" required>
+    <option value="">Select Loan Type</option>
+    <option value="Home Loan">HOME LOAN</option>
+    <option value="Loan Against Property">LOAN AGAINST PROPERTY</option>
+    <option value="Business Loan">BUSINESS LOAN</option>
+    <option value="Personal Loan">PERSONAL LOAN</option>
+  </select>
+  <br><br>
+
+  <button type="submit">SEND 📤</button>
+
       </form>
       <br><br>
       <a href="index.html" class="return">Return back to main menu</a>
