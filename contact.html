@@ -16,25 +16,45 @@
 
       <form action="https://api.web3forms.com/submit" method="POST">
 
+  <!-- REQUIRED: Web3Forms access key -->
   <input type="hidden" name="access_key" value="bf7da8fd-f65d-4375-8185-7b8b97f1a382">
 
-  <input type="text" name="name" placeholder="Enter your name" required>
+  <!-- OPTIONAL but recommended -->
+  <input type="hidden" name="subject" value="New Loan Inquiry">
+  <input type="hidden" name="from_name" value="Loan Website">
+
+  <!-- Name -->
+  <input
+    type="text"
+    name="name"
+    placeholder="Enter your name"
+    required
+  >
   <br><br>
 
-  <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
+  <!-- Phone -->
+  <input
+    type="tel"
+    name="phone"
+    placeholder="Enter your mobile number"
+    pattern="[0-9]{10}"
+    required
+  >
   <br><br>
 
+  <!-- Loan Type -->
   <h3>Loan Type</h3>
 
   <select name="loan_type" required>
     <option value="">Select Loan Type</option>
-    <option value="Home Loan">HOME LOAN</option>
-    <option value="Loan Against Property">LOAN AGAINST PROPERTY</option>
-    <option value="Business Loan">BUSINESS LOAN</option>
-    <option value="Personal Loan">PERSONAL LOAN</option>
+    <option>HOME LOAN</option>
+    <option>LOAN AGAINST PROPERTY</option>
+    <option>BUSINESS LOAN</option>
+    <option>PERSONAL LOAN</option>
   </select>
   <br><br>
 
+  <!-- Submit -->
   <button type="submit">SEND 📤</button>
 
       </form>
